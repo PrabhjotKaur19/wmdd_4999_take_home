@@ -1,0 +1,95 @@
+header img{
+	max-width: 100%;
+}
+body{
+	margin: 0;
+}
+img{
+	width: 100%;
+}
+h2{
+	text-align: center;
+}
+.main,.list{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: center;
+	border: 1px solid #4CAF50;
+	border-radius: 1%;
+}
+.img-div, .slct-div, form{
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-bottom: 1%;
+}
+.slct-div input{
+	font-size: 24px;
+}
+form{
+	margin-bottom: 5%;
+}
+form *{
+	display: block;
+	font-size: 24px;
+	width: 100%;
+	margin-top: 1%;
+}
+textarea{
+	width: 97%;
+	border: 1px solid #4caf50;
+	border-radius: 7px;
+	padding: 1%;
+}
+.lbl{
+	text-align: left;
+	margin-top: 6%;
+	margin-bottom: 1.5%;
+
+}
+button{
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-top: 5%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+footer{
+	background-color: #4CAF50;
+	text-align: center;
+	color: white;
+	padding: 1%;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+	color: white;
+	background-color: #4CAF50;
+	display: inline-block;
+	padding: 2%;
+	font-size: 24px;
+	font-weight: bold;
+	width: 96%;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+	opacity: 0.8;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}

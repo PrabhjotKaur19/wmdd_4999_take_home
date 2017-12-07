@@ -1,0 +1,42 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Image Sharing Service</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+		<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+		<meta charset=utf-8 />
+		<script src="js/index.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<img src="https://s3-us-west-2.amazonaws.com/imagesharingservice.com/Images/chahal-011-01.png">
+			<!-- <h1>Welcome to Image Sharing Service</h1> -->
+		</header>
+		<div class ="main">
+			<h1>Save an Image</h1>
+			<div class="img-div">
+				<img id="preview" src="https://s3-us-west-2.amazonaws.com/imagesharingservice.com/Images/image.png" alt="your image" />
+			</div>
+			<div class="slct-div">
+				<input type='file' name="file" id="file" class="inputfile" onchange="readURL();" />
+				<label for="file" class="icon-image">Choose a file</label>
+			</div>
+			<form>
+				<label class="lbl"><b>Description of Image</b></label>
+				<textarea type="text" placeholder="Describe image..." rows="5" id="des"></textarea>
+				<button type="button" class="icon-cloud-upload" id="save" onclick="upload(this);">Save</button>
+				<button type="button" id="save" onclick="show();">Show</button>
+			</form>
+			<div id="msg"></div>
+		</div>
+		<div id="list">
+
+
+		</div>
+		<footer><h3>Image Sharing Service</h3></footer>
+	</body>
+	</html>
